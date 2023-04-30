@@ -6,6 +6,7 @@
     <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -18,9 +19,16 @@
         grid-template-columns: repeat(14,1fr);
         background-color: black;
         gap:10px;
-        width: 1000px;
-        height: 1000px;
-    }    
+        width: 600px;
+        height: 600px;
+        margin-bottom: 20%;
+    }
+    @media(max-width:600px){
+            .container{
+                width:300px;
+                height:300px
+            }
+       }
     .i{
             background-color:#F0F1EC;
     }
@@ -109,5 +117,6 @@
         <div class="i yellow sixteen"></div>
         <div class="i seventeen"></div>
     </div>
+<footer>&copy Made by Vadym Hrabovskyi</footer>
 </body>
 </html>
